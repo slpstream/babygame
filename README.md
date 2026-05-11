@@ -89,7 +89,7 @@ Both versions offer the same core functionality: a fullscreen solid-color displa
 
 ## For Parents
 
-For more information on why this program was created and how to set it up for your child, please read [forparents.md](forparents.md).
+By transforming a "first computer" from a passive screen into a tool for self-expression and cause-and-effect, you're giving your youngest humans a foundational lesson in their own agency. For more information on why this program was created and how to set it up for your child, please read [forparents.md](forparents.md).
 
 ## History
 
@@ -208,5 +208,5 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 
 ### Parental Supervision Required
 
-This software is designed for babies under **active parental supervision**. Always supervise children when they are using computers or electronic devices.
+This software is designed for babies under **active parental supervision**. Always supervise children when they are using computers or electronic devices. See also [forparents.md](forparents.md).
 
