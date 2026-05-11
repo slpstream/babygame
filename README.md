@@ -178,25 +178,25 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
 ```text
 babygame/
-├── assets/
-│   └── images/
-├── python/
-│   ├── babycolor.py
-│   ├── requirements.txt
-│   └── SPEC.md
-├── web/
-│   ├── index.html
-│   └── SPEC.md
-├── LICENSE
-├── README.md
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── forparents.md
-├── setup.py
-├── pyproject.toml
-├── requirements.txt
-├── package.json
-└── .gitignore
++-- assets/
+|   +-- images/
++-- python/
+|   +-- babycolor.py
+|   +-- requirements.txt
+|   +-- SPEC.md
++-- web/
+|   +-- index.html
+|   +-- SPEC.md
++-- LICENSE
++-- README.md
++-- CHANGELOG.md
++-- CONTRIBUTING.md
++-- forparents.md
++-- setup.py
++-- pyproject.toml
++-- requirements.txt
++-- package.json
++-- .gitignore
 ```
 
 </div>
