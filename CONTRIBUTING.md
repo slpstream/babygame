@@ -6,19 +6,18 @@ Thank you for your interest in contributing to the Baby's First Computer project
 
 ```
 babygame/
-├── python/           # Python implementation
-│   ├── babycolor.py  # Main Python game script
-│   ├── requirements.txt
-│   └── SPEC.md
-├── web/              # Web implementation
-│   ├── babygame.html # Main web game
-│   ├── index.html    # Landing page
-│   └── SPEC.md
-├── LICENSE
-├── README.md
-├── setup.py
-├── requirements.txt
-└── CONTRIBUTING.md
+├── babygame/          # Core Python package
+│   ├── babycolor.py  # Main game logic
+│   └── __init__.py   # Package initialization
+├── assets/           # Project assets and images
+├── index.html        # Web implementation (Live Demo)
+├── PYTHON-SPEC.md    # Python version specification
+├── WEB-SPEC.md       # Web version specification
+├── LICENSE           # MIT License
+├── README.md         # Main documentation
+├── forparents.md     # Resource for parents
+├── setup.py          # Python package configuration
+└── CONTRIBUTING.md   # This file
 ```
 
 ## Development Setup
@@ -37,17 +36,17 @@ babygame/
 
 3. Run the Python game:
    ```bash
-   python python/babycolor.py
+   python babygame/babycolor.py
    ```
 
 ### Web Version
 1. The web version requires no installation
-2. Open `web/babygame.html` in a web browser
+2. Open `index.html` in a web browser
 3. Or use the development server:
    ```bash
    python -m http.server 8000
    ```
-   Then open `http://localhost:8000/web/babygame.html`
+   Then open `http://localhost:8000/index.html`
 
 ## Making Changes
 
