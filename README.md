@@ -11,7 +11,9 @@
 ![PyGame](https://img.shields.io/badge/PyGame-2.0+-orange.svg)
 ![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20Desktop-lightgrey.svg)
 
-A fullscreen color cycling game designed for babies (pre-verbal, pre-mobile) with parent supervision. Press any key to cycle through eight vibrant colors with corresponding musical tones.
+"Baby's First Computer" is an early-in-life, foundational game to introduce the youngest humans to interacting with computers and show them they have agency in the world. By cycling colors through keypresses, babies learn their actions create immediate change, transforming their 'first computer' into a lesson in being in control before they can even walk or talk. 
+
+This fullscreen color cycling game is designed for babies (pre-verbal, pre-mobile) with parent supervision. Press any key to cycle through eight vibrant colors with corresponding musical tones.
 
 </div>
 
