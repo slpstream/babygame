@@ -141,7 +141,6 @@ The script checks for:
 
 ## Usage
 
-<div align="center">
 
 ### How to Play
 
@@ -153,7 +152,6 @@ The script checks for:
 
 Each color change plays a corresponding musical tone.
 
-</div>
 
 ## Technical Details
 
@@ -204,18 +202,8 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 
 ## Safety Note
 
-<div align="center">
 
 ### Parental Supervision Required
 
 This software is designed for babies under **active parental supervision**. Always supervise children when they are using computers or electronic devices.
 
-</div>
-
----
-
-<div align="center">
-
-*"The simplest games often bring the greatest joy."*
-
-</div>
