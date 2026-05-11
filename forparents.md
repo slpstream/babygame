@@ -78,7 +78,7 @@ This program is the opposite of harmful to infant development. How much is too m
 
 ## A Note from the Author
 
-A good friend wrote the first version of this in 1994. Our first child had just been born, and he wanted to make something for her that that said: *the computer knows you are here, you are in control, and it will respond to you.*
+A good friend from the Cypherpunks group wrote the first version of this in 1994. Our first child had just been born, and he wanted her to learn agency as early as possible. He did that by making something for her that that said: *the computer knows you are here, you are in control, and it will respond to you.*
 
 I set up a monitor and an old keyboard on the floor. My princess crawled over. Hit a key. The room lit up in a different color. We cycled through white, red, black, yellow, green — and when green came around, she waited, staring at it, and clearly loving that color. Then she hit the key again.
 
@@ -86,9 +86,25 @@ She's an adult now and she's a tech native who clearly in charge of how she mass
 
 The program, now remade, works just like it did more than three decades ago. If your baby grows up to be curious about how computers respond to people, and someday wants to read the source code, it is all there and simple enough to understand (or build upon) at a quick glance.
 
+### Why Agency?
+
+The earlier agency is taught, the better.  For the original author of this program, the goal was to transmit the lesson of human agency: The right of individuals to act, to cause effects, to not be passive recipients of what more powerful actors decide for them.
+
+Before a baby has the words for it, they learn the lesson of having agency: A keyboard on the floor. Press a key. The room changes. *You did that.*
+
+"Baby's First Computer" is simple and open source so any parent can give their child that lesson before the child has words for it. The original version was written by a member of the Cypherpunks, a group which wanted a world where individuals have power over their own lives. He gave a crawling baby a keyboard and a screen that responded to them, and the reason he wrote it was foundational: taking agency starts before language, before politics, before any of the battles that come later.
+
+The child who learns at six months that their actions change the world is better equipped for entering their world on their own terms.  You don't have to be a cypherpunk to be the kind of parent who want your children to grow up to be free and independent beings with power over their own lives. Parents want to raise a competent human with the wherewithal to stand on their own feet and interact with the world (including with technology) as a doer, and someone who who was already, from the floor up, constituted as an individual who acts rather than waits, who reaches for the keyboard rather than watching the screen, and who knows instinctively, in their bones, that the world responds to them.
+
+The cypherpunks set out to fix what they saw as problems, and they sought a revolution. But the cypherpunk who wrote the original version of this little game did it because he wanted his friend's baby to be raised as someone for whom problems wouldn't take hold in the first place. This meant raising a child who grew up with such a secure sense of their own agency that they would instinctively be skeptical of systems that want to make them passive. 
+
+You don't have to care about politics or early internet ideology to put a keyboard on the floor and let a baby play with this program. You just have to believe that your child's first relationship with technology should be one where they are in charge of it, not the other way around.
+
+That belief — unpolitical, instinctive, parental — is durable. The lesson a baby learns on the floor is where agency begins.
+
 ---
 
-*Baby's First Computer is released under the MIT License. Do whatever you like with it.*
+*Baby's First Computer is released under the MIT License. It is yours, so do whatever you like with it. Be good and raise good humans.*
 
 
 
