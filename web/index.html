@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Baby's First Computer</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: #ffffff;
+            }
+            #fullscreen-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                z-index: 1000;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            #fullscreen-btn:hover {
+                background: rgba(0, 0, 0, 0.7);
+            }
+            body:hover #fullscreen-btn {
+                opacity: 1;
+            }
+            #exit-hint {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                padding: 10px 20px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border-radius: 5px;
+                font-size: 14px;
+                display: none;
+                z-index: 1000;
+            }
+            #parent-hint {
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px 15px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border-radius: 5px;
+                font-size: 12px;
+                z-index: 1000;
+                opacity: 0;
+                transition: opacity 0.5s;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            #parent-hint-text {
+                white-space: nowrap;
+            }
+            #parent-hint-close {
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 1;
+                opacity: 0.7;
+            }
+            #parent-hint-close:hover {
+                opacity: 1;
+            }
+            body:hover #parent-hint {
+                opacity: 1;
+            }
+            body.in-fullscreen #parent-hint {
+                opacity: 0 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="fullscreen-btn">Fullscreen</button>
+        <div id="exit-hint">Press ESC to exit fullscreen</div>
+        <div id="parent-hint">
+            <span id="parent-hint-text">Browser-Remake of Baby's First Computer:<br><br><B>KEYBOARD CLICKS CHANGE COLOR</B></span>
+            <span id="parent-hint-close">✕</span>
+        </div>
+
+        <script>
+            // Color palette
+            const COLORS = [
+                "#FF0000", // Red
+                "#00FF00", // Green
+                "#0000FF", // Blue
+                "#FFFF00", // Yellow
+                "#FFFFFF", // White
+                "#000000", // Black
+                "#FFB6C1", // Pink
+                "#00FFFF", // Cyan
+            ];
+
+            // Frequencies for each color (C4, E4, G4, C5, E5, G5, C6, E6)
+            const FREQUENCIES = [261, 330, 392, 523, 659, 784, 1047, 1319];
+
+            // Current color index (start with white = index 4)
+            let currentIndex = 4;
+
+            // Audio context (created on first interaction)
+            let audioCtx = null;
+
+            // Initialize with white
+            document.body.style.backgroundColor = COLORS[currentIndex];
+
+            // Create audio context on first interaction
+            function initAudio() {
+                if (!audioCtx) {
+                    audioCtx = new (
+                        window.AudioContext || window.webkitAudioContext
+                    )();
+                }
+            }
+
+            // Play tone for current color
+            function playTone() {
+                if (!audioCtx) return;
+
+                const oscillator = audioCtx.createOscillator();
+                const gainNode = audioCtx.createGain();
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
+
+                oscillator.frequency.value = FREQUENCIES[currentIndex];
+                oscillator.type = "sine";
+
+                // Fade out envelope
+                gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(
+                    0.01,
+                    audioCtx.currentTime + 0.2,
+                );
+
+                oscillator.start(audioCtx.currentTime);
+                oscillator.stop(audioCtx.currentTime + 0.2);
+            }
+
+            // Change to next color
+            function nextColor() {
+                currentIndex = (currentIndex + 1) % COLORS.length;
+                document.body.style.backgroundColor = COLORS[currentIndex];
+                playTone();
+            }
+
+            // Handle keypress
+            document.addEventListener("keydown", (e) => {
+                initAudio();
+
+                if (e.key === "Escape") {
+                    // ESC is handled by browser for fullscreen exit
+                    return;
+                }
+
+                nextColor();
+            });
+
+            // Handle mouse click
+            document.addEventListener("click", (e) => {
+                // Ignore clicks on the button
+                if (e.target.id === "fullscreen-btn") return;
+
+                initAudio();
+                nextColor();
+            });
+
+            // Handle touch
+            document.addEventListener("touchstart", (e) => {
+                // Ignore touches on the button
+                if (e.target.id === "fullscreen-btn") return;
+
+                initAudio();
+                nextColor();
+            });
+
+            // Fullscreen functionality
+            const fullscreenBtn = document.getElementById("fullscreen-btn");
+            const exitHint = document.getElementById("exit-hint");
+            const parentHint = document.getElementById("parent-hint");
+            const parentHintClose =
+                document.getElementById("parent-hint-close");
+
+            // Close parent hint button
+            parentHintClose.addEventListener("click", (e) => {
+                e.stopPropagation();
+                parentHint.style.display = "none";
+            });
+
+            fullscreenBtn.addEventListener("click", () => {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen();
+                }
+            });
+
+            // Show/hide hint based on fullscreen state
+            document.addEventListener("fullscreenchange", () => {
+                if (document.fullscreenElement) {
+                    fullscreenBtn.style.display = "none";
+                    exitHint.style.display = "block";
+                    // Hide hint after 3 seconds
+                    setTimeout(() => {
+                        exitHint.style.display = "none";
+                    }, 3000);
+                } else {
+                    fullscreenBtn.style.display = "block";
+                    exitHint.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+</html>

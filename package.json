@@ -1,0 +1,28 @@
+{
+  "name": "babygame-web",
+  "version": "1.0.0",
+  "description": "Web version of Baby Color Game - a simple fullscreen color cycling game for babies",
+  "main": "web/babygame.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "baby",
+    "game",
+    "educational",
+    "interactive",
+    "color",
+    "web"
+  ],
+  "author": "SLPstream",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slpstream/babygame"
+  },
+  "bugs": {
+    "url": "https://github.com/slpstream/babygame/issues"
+  },
+  "homepage": "https://github.com/slpstream/babygame#readme"
+}

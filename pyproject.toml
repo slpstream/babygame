@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "babygame"
+version = "1.0.0"
+authors = [
+    {name = "SLPstream"}
+]
+description = "A simple fullscreen color cycling game for babies"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment",
+]
+keywords = ["baby", "game", "educational", "interactive", "color"]
+dependencies = [
+    "pygame>=2.0.0",
+    "numpy>=1.20.0",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/slpstream/babygame"
+Repository = "https://github.com/slpstream/babygame"
+Issues = "https://github.com/slpstream/babygame/issues"
+
+[project.scripts]
+babygame = "babygame.python.babycolor:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["babygame*"]
+exclude = ["tests*", "web*"]
