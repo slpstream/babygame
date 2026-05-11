@@ -41,9 +41,9 @@ Repository = "https://github.com/slpstream/babygame"
 Issues = "https://github.com/slpstream/babygame/issues"
 
 [project.scripts]
-babygame = "babygame.python.babycolor:main"
+babygame = "babygame.babycolor:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["babygame*"]
-exclude = ["tests*", "web*"]
+exclude = ["assets*", "web*"]

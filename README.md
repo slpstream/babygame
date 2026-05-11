@@ -50,7 +50,7 @@ babygame
 **Direct Run:**
 ```bash
 git clone https://github.com/slpstream/babygame.git
-cd babygame && python python/babycolor.py
+cd babygame && python babygame/babycolor.py
 ```
 
 ## Color Palette
@@ -114,7 +114,7 @@ This is a recreation of Ed Swank's "Baby Game," originally created in 1994. The 
 git clone https://github.com/slpstream/babygame.git
 cd babygame
 pip install -r requirements.txt
-python python/babycolor.py
+python babygame/babycolor.py
 ```
 
 **Option 2: Install as Package**
@@ -174,13 +174,12 @@ Each color change plays a corresponding musical tone.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
-### Project Structure
-
-- **assets/**: Project assets and documentation images.
-- **python/**: Desktop implementation using PyGame.
+- **babygame/**: Core Python package.
   - `babycolor.py`: Main game logic.
-  - `requirements.txt`: Python dependencies.
-- **index.html**: Web-based implementation (Playable in any browser).
+  - `__init__.py`: Package initialization.
+- **assets/**: Project assets and documentation images.
+- **index.html**: Web-based implementation (Live Demo).
+- **PYTHON-SPEC.md**: Technical specification for the Python version.
 - **WEB-SPEC.md**: Technical specification for the web version.
 - **LICENSE**: MIT License.
 - **README.md**: Project overview and documentation.

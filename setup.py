@@ -39,7 +39,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "babygame=babygame.python.babycolor:main",
+            "babygame=babygame.babycolor:main",
         ],
     },
     include_package_data=True,
