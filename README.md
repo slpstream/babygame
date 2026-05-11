@@ -55,23 +55,9 @@ cd babygame && python python/babycolor.py
 
 ### **Eight Vibrant Colors**
 
-```
-████████████████████████████████████████████████████████████████████████████████
-██                                                                            ██
-██    🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥    ██
-██    🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥    ██
-██    🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥    ██
-██                                                                            ██
-██    🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩    ██
-██    🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩    ██
-██    🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩    ██
-██                                                                            ██
-██    🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦    ██
-██    🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦    ██
-██    🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦    ██
-██                                                                            ██
-████████████████████████████████████████████████████████████████████████████████
-```
+### **Primary Colors**
+
+🟥 🟩 🟦 🟨 ⬜ ⬛ 💖 🦋
 
 ### **Color and Sound Mapping**
 
@@ -190,16 +176,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
 <div align="center">
 
-```bash
+```text
 babygame/
-├── assets/           # Project assets
-│   └── images/       # Documentation images
-├── python/           # Python implementation
-│   ├── babycolor.py  # Main game script
+├── assets/
+│   └── images/
+├── python/
+│   ├── babycolor.py
 │   ├── requirements.txt
 │   └── SPEC.md
-├── web/              # Web implementation
-│   ├── index.html    # Self-contained, portrable game file
+├── web/
+│   ├── index.html
 │   └── SPEC.md
 ├── LICENSE
 ├── README.md
