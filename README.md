@@ -174,32 +174,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
 ### Project Structure
 
-<div align="center">
-
-```text
-babygame/
-|-- assets/
-|   `-- images/
-|-- python/
-|   |-- babycolor.py
-|   |-- requirements.txt
-|   `-- SPEC.md
-|-- web/
-|   |-- index.html
-|   `-- SPEC.md
-|-- LICENSE
-|-- README.md
-|-- CHANGELOG.md
-|-- CONTRIBUTING.md
-|-- forparents.md
-|-- setup.py
-|-- pyproject.toml
-|-- requirements.txt
-|-- package.json
-`-- .gitignore
-```
-
-</div>
+- **assets/**: Project assets and documentation images.
+- **python/**: Desktop implementation using PyGame.
+  - `babycolor.py`: Main game logic.
+  - `requirements.txt`: Python dependencies.
+- **web/**: Browser-based implementation using HTML5/JS.
+  - `index.html`: Self-contained, portable game file.
+- **LICENSE**: MIT License.
+- **README.md**: Project overview and documentation.
+- **CHANGELOG.md**: History of project changes.
+- **CONTRIBUTING.md**: Guidelines for development.
+- **forparents.md**: Background and setup tips for parents.
+- **setup.py** / **pyproject.toml**: Python packaging configuration.
+- **.gitignore**: Git exclusion rules.
 
 ## License
 
