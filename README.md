@@ -15,6 +15,8 @@
 
 This fullscreen color cycling game is designed for babies (pre-verbal, pre-mobile) with parent supervision. Press any key to cycle through eight vibrant colors with corresponding musical tones.
 
+### [**🚀 Play the Live Demo**](https://slpstream.github.io/babygame/)
+
 </div>
 
 ## Table of Contents
@@ -42,7 +44,7 @@ babygame
 ```
 
 **Web Browser Version:**
-1. Open `web/index.html` in your browser.
+1. Open [index.html](index.html) in your browser.
 2. Click "Start Baby Game" or press any key.
 
 **Direct Run:**
@@ -123,7 +125,7 @@ babygame
 
 ### Web Browser Version
 
-1. Open `web/index.html` to see the landing page, or open `web/babygame.html` directly for the game.
+1. Open [index.html](index.html) to play the game instantly.
 2. Use the "Fullscreen" button or press F11.
 3. Press any key or touch the screen to change colors.
 
@@ -178,8 +180,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 - **python/**: Desktop implementation using PyGame.
   - `babycolor.py`: Main game logic.
   - `requirements.txt`: Python dependencies.
-- **web/**: Browser-based implementation using HTML5/JS.
-  - `index.html`: Self-contained, portable game file.
+- **index.html**: Web-based implementation (Playable in any browser).
+- **WEB-SPEC.md**: Technical specification for the web version.
 - **LICENSE**: MIT License.
 - **README.md**: Project overview and documentation.
 - **CHANGELOG.md**: History of project changes.
