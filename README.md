@@ -15,7 +15,7 @@
 
 This fullscreen color cycling game is designed for babies (pre-verbal, pre-mobile) with parent supervision. Press any key to cycle through eight vibrant colors with corresponding musical tones.
 
-### [**🚀 Launch the Live Version **](https://slpstream.github.io/babygame/)
+### [🚀 Launch the Live Version](https://slpstream.github.io/babygame/)
 
 </div>
 
