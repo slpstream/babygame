@@ -61,7 +61,7 @@ Green is a common one. Something about the wavelength, perhaps, or the contrast.
 
 ---
 
-## On Screen Time and Infant Development
+## Screen Time and Infant Development
 
 There is ongoing and legitimate debate about screen time for infants. The research landscape distinguishes between passive consumption and interactive, caregiver-mediated engagement. **Baby's First Computer** sits firmly in the latter category:
 
@@ -82,13 +82,13 @@ A good friend from the Cypherpunks group wrote the first version of this in 1994
 
 I set up a monitor and an old keyboard on the floor. My princess crawled over. Hit a key. The room lit up in a different color. We cycled through white, red, black, yellow, green — and when green came around, she waited, staring at it, and clearly loving that color. Then she hit the key again.
 
-She's an adult now and she's a tech native who clearly in charge of how she massters computers. Technology is not in charge of her. 
+She's an adult now and she's a tech native who is clearly in charge of how she massters computers. Technology is not in charge of her. 
 
-The program, now remade, works just like it did more than three decades ago. If your baby grows up to be curious about how computers respond to people, and someday wants to read the source code, it is all there and simple enough to understand (or build upon) at a quick glance.
+The program, now remade in HTML and Python versions, works just like it did more than three decades ago. If your baby grows up to be curious about how computers respond to people, and someday wants to read the source code, it is all there and simple enough to understand (or build upon) at a quick glance.
 
 ### Why Agency?
 
-The earlier agency is taught, the better.  For the original author of this program, the goal was to transmit the lesson of human agency: The right of individuals to act, to cause effects, to not be passive recipients of what more powerful actors decide for them.
+The earlier agency is taught, the better it is for self-assured later development.  For the original author of this program, the goal was to transmit the lesson of human agency: The right of individuals to act, to cause effects, to not be passive recipients of what outside actors decide for them.
 
 Before a baby has the words for it, they learn the lesson of having agency: A keyboard on the floor. Press a key. The room changes. *You did that.*
 
@@ -96,9 +96,9 @@ Before a baby has the words for it, they learn the lesson of having agency: A ke
 
 The child who learns at six months that their actions change the world is better equipped for entering their world on their own terms.  You don't have to be a cypherpunk to be the kind of parent who want your children to grow up to be free and independent beings with power over their own lives. Parents want to raise a competent human with the wherewithal to stand on their own feet and interact with the world (including with technology) as a doer, and someone who who was already, from the floor up, constituted as an individual who acts rather than waits, who reaches for the keyboard rather than watching the screen, and who knows instinctively, in their bones, that the world responds to them.
 
-The cypherpunks set out to fix what they saw as problems, and they sought a revolution. But the cypherpunk who wrote the original version of this little game did it because he wanted his friend's baby to be raised as someone for whom problems wouldn't take hold in the first place. This meant raising a child who grew up with such a secure sense of their own agency that they would instinctively be skeptical of systems that want to make them passive. 
+The cypherpunks set out to fix what they saw as problems, and they sought a revolution to do that. But the cypherpunk who wrote the original version of this little game merely did it because he wanted his friend's baby to be raised as someone for whom problems wouldn't take hold in the first place. This meant raising a child who grew up with such a secure sense of their own agency that they would instinctively be skeptical of systems that want to make them passive. 
 
-You don't have to care about politics or early internet ideology to put a keyboard on the floor and let a baby play with this program. You just have to believe that your child's first relationship with technology should be one where they are in charge of it, not the other way around.
+You don't have to care about politics or early internet ideology to put a keyboard on the floor and let your baby play with this program. All it takes is a desire for your child's first relationship with technology to be one where they are in charge of it, not the other way around.
 
 That belief — unpolitical, instinctive, parental — is durable. The lesson a baby learns on the floor is where agency begins.
 
